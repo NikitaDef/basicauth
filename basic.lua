@@ -42,3 +42,7 @@ function basicAuthHandler(nextHandler, checkMap)
         return nextHandler(req)
     end
 end
+
+return {
+    basicAuthHandler = basicAuthHandler
+}
